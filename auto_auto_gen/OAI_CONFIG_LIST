@@ -1,0 +1,18 @@
+[
+    {
+        "model": "gpt-4",
+        "api_key": "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"
+    },
+    {
+        "model": "gpt-4-1106-preview",
+        "api_key": "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"
+    },
+    {
+        "model": "lm_studio",
+        "api_type": "open_ai",
+        "api_base": "http://localhost:1234/v1",
+        "api_key": "NULL"
+    }
+]
+
+
