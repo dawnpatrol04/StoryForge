@@ -7,10 +7,10 @@ from langchain.chains import LLMChain
 class MainCharacterChain:
 
     PROMPT = """
-    You are provided with the resume of a person. 
-    Describe the person's profile in a few sentences and include that person's name.
+    Generate a detailed profile for a main character in a novel based on the following attributes.
+    Include the character's name, background, personality, and any relevant details that will be important in the story.
 
-    Resume: {text}
+    Attributes: {attributes}
 
     Profile:"""
 
@@ -24,7 +24,9 @@ class MainCharacterChain:
 
         self.chain.verbose = True
 
-    def load_resume(self, file_name):
+    def run(self, attributes):
+        # Instead of loading a resume, we now generate a character profile based on attributes.
+        return self.chain.predict(attributes=attributes)
         folder = 'I am a cowboy and I like to ride on my horse'
         return folder
 
